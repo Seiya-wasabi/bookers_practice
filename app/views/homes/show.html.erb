@@ -1,2 +1,24 @@
-<h1>Homes#show</h1>
-<p>Find me in app/views/homes/show.html.erb</p>
+<main>
+  <body>
+    <div class >
+      <!--<table>-->
+      <!--  <thead>-->
+      <!--    <tr>-->
+      <!--      <th>Title: </th>-->
+      <!--      <th><</th>-->
+      <!--    </tr>-->
+      <!--    <tr>-->
+      <!--      <th>Body: </th>  -->
+      <!--    <th></th>-->
+      <!--    </tr>-->
+      <!--  </thead>-->
+      <!--</table>-->
+      <p class ="box"><strong>Title: </strong> <%= @book.title%></p>
+      <p class ="box"><strong>Body: </strong> <%= @book.body%></p>
+    </div>
+    <div>
+      <%= link_to "Edit", edit_home_path(@book) %>
+      <%= link_to "Back", homes_path %>
+    </div>
+  </body>
+</main>
