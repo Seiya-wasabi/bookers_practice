@@ -16,7 +16,7 @@
           <td><%= b.body%></td>
           <td><%= link_to "Show", home_path(b.id) %></td>
           <td><%= link_to "Edit", edit_home_path(b.id) %></td>
-          <td><%= link_to "Destroy" "homes/(b.id)", method: :delete, "date-connfirm" => "ホンマに消すんかいな..." %></td>
+          <td><%= link_to "Destroy", destroy_path(b.id), method: :delete, "date-connfirm" => "ホンマに消すんかいな..." %></td>
         </tr>
       </tbody>
         <% end %>
